@@ -6,17 +6,21 @@ API rest para gestionar un parqueadero que acepta solo motos y carros con un lí
 
 ## Configuración
 
-1. Clona el repositorio
-   git clone https://github.com/santiagoospina21/prueba-santiago-new-Inntech.git
+1. Clona el repositorio:
+
+   - git clone https://github.com/santiagoospina21/prueba-santiago-new-Inntech.git
 
 2. Crea un archivo .env en la raíz del proyecto y añade la URI de tu base de datos MongoDB:
-   MONGO_URI= tu_dirección_de_base_de_datos
+
+- MONGO_URI= tu_dirección_de_base_de_datos
 
 3. Instala las dependencias:
-   npm install
+
+- npm install
 
 4. Inicia el servidor:
-   npm start
+
+- npm start
 
 ## Restaurar base de datos
 
@@ -26,26 +30,26 @@ API rest para gestionar un parqueadero que acepta solo motos y carros con un lí
 
 - mongorestore --uri "tu_dirección_de_base_de_datos" ./backup
 
-- NOTA: (Asegúrese que en la carpeta ./backup esten los archivos, de no ser asi cambielo por la ruta donde esten los archivos y permita
+- **NOTA**: (Asegúrese que en la carpeta ./backup esten los archivos, de no ser asi cambielo por la ruta donde esten los archivos y permita
   la ejecución del mongorestore)
 
 -Ejemplo: mongorestore --uri "mongodb://127.0.0.1:27017/prueba-nueva" D:\Proyectos-Programacion\Prueba-tecnica-NewIntech-Santiago-Ospina\backup
 
 ## Endpoints
 
--`GET /api/vehiculos`: Obtiene todos los vehículos.
+- `GET /api/vehiculos`: Obtiene todos los vehículos.
 
--`GET /api/vehiculos/:id`: Obtiene un vehículo de acuerdo a su ID.
+- `GET /api/vehiculos/:id`: Obtiene un vehículo de acuerdo a su ID.
 
--`GET /api/vehiculos/carros`: Obtiene todos los carros.
+- `GET /api/vehiculos/carros`: Obtiene todos los carros.
 
--`GET /api/vehiculos/motos`: Obtiene todas las motos.
+- `GET /api/vehiculos/motos`: Obtiene todas las motos.
 
--`POST /api/agregarvehiculo`: Crea un nuevo vehículo.
+- `POST /api/agregarvehiculo`: Crea un nuevo vehículo.
 
--`PATCH /api/actualizarvehiculo/:id`: Actualiza un vehículo.
+- `PATCH /api/actualizarvehiculo/:id`: Actualiza un vehículo.
 
--`DELETE /api/eliminarvehiculo/:id`: Elimina un vehículo.
+- `DELETE /api/eliminarvehiculo/:id`: Elimina un vehículo.
 
 ## Consideraciones
 
