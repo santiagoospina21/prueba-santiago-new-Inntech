@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "b3c04d70-e319-4b7a-9550-f57f2050c513",
+		"name": "API Parqueadero",
+		"description": "API rest para gestionar un parqueadero que acepta solo motos y carros con un límite de 5 carros y 10 motos.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32819828"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Listar vehiculos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vehiculos"
+							]
+						},
+						"description": "Devuelve el listado de todos los vehiculos en la BD."
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vehiculos/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vehiculos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6657a0d2cf7fcf605fecd101",
+									"description": "_id del documento en la BD."
+								}
+							]
+						},
+						"description": "Devuelve un vehículo buscandolo por su id."
+					},
+					"response": []
+				},
+				{
+					"name": "Listar carros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vehiculos/carros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vehiculos",
+								"carros"
+							]
+						},
+						"description": "Devuelve una lista con todos los carros."
+					},
+					"response": []
+				},
+				{
+					"name": "Listar motos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/vehiculos/motos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"vehiculos",
+								"motos"
+							]
+						},
+						"description": "Devuelve una lista con todas las motos."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Agregar vehículo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"placa\":\"JDL94L\",\r\n    \"tipo\":\"Moto\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/agregarvehiculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"agregarvehiculo"
+							]
+						},
+						"description": "Agregar un nuevo vehículo a la base de datos. Requiere la placa y el tipo, el cual solo puede ser \"Carro\" o \"Moto\"."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATCH",
+			"item": [
+				{
+					"name": "Actualizar vehículo",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"placa\": \"FGM857\",\r\n    \"horaSalida\": \"2024-06-10 09:50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizarvehiculo/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizarvehiculo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6657a1c199197323a66bd9e5"
+								}
+							]
+						},
+						"description": "Actualizar un vehículo. Requiere por lo menos enviar la placa,tipo u horaSalida. La hora de salida debe estar en el formato ¨yyyy-MM-dd HH:mm¨."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Eliminar vehículo ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/eliminarvehiculo/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminarvehiculo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66579fd5cf7fcf605fecd0ed"
+								}
+							]
+						},
+						"description": "Eliminar un vehículo de la BD."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
