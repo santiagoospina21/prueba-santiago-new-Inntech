@@ -33,7 +33,7 @@ API rest para gestionar un parqueadero que acepta solo motos y carros con un lí
 - **NOTA**: (Asegúrese que en la carpeta ./backup esten los archivos, de no ser asi cambielo por la ruta donde esten los archivos y permita
   la ejecución del mongorestore)
 
--Ejemplo: mongorestore --uri "mongodb://127.0.0.1:27017/prueba-nueva" D:\Proyectos-Programacion\Prueba-tecnica-NewIntech-Santiago-Ospina\backup
+- **Ejemplo**: mongorestore --uri "mongodb://127.0.0.1:27017/prueba-nueva" D:\Proyectos-Programacion\Prueba-tecnica-NewIntech-Santiago-Ospina\backup
 
 ## Endpoints
 
