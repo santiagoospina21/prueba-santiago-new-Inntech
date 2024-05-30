@@ -1,6 +1,6 @@
 # APP PARQUEADERO
 
-##Descripción
+## Descripción
 
 API rest para gestionar un parqueadero que acepta solo motos y carros con un límite de 5 carros y 10 motos.
 
