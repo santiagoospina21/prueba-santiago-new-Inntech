@@ -67,4 +67,4 @@ Se incluye un archivo `API Parqueadero.postman_collection.json` en `./postman` e
 
 ## Swagger
 
-La documentacion de la API también se incluye en: http://localhost:3000/api/docs
+La documentación de la API también se incluye en: http://localhost:3000/api/docs
