@@ -10,9 +10,10 @@ API rest para gestionar un parqueadero que acepta solo motos y carros con un lí
 
    - git clone https://github.com/santiagoospina21/prueba-santiago-new-Inntech.git
 
-2. Crea un archivo .env en la raíz del proyecto y añade la URI de tu base de datos MongoDB:
+2. Crea un archivo .env en la raíz del proyecto y añade la URI de tu base de datos MongoDB y el puerto:
 
 - MONGO_URI= tu_dirección_de_base_de_datos
+- PORT: 3000
 
 3. Instala las dependencias:
 
