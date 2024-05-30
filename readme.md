@@ -64,3 +64,7 @@ API rest para gestionar un parqueadero que acepta solo motos y carros con un lí
 ## Postman
 
 Se incluye un archivo `API Parqueadero.postman_collection.json` en `./postman` el cual puedes importar en Postman.
+
+## Swagger
+
+La documentacion de la API también se incluye en: http://localhost:3000/api/docs
